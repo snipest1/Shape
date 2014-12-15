@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+    <title>Shape</title>
     <body>
 
 <?php
@@ -7,87 +8,9 @@
 /* This the html file Shape main 
  * it's also the default file
 
-include 'NetBeansProjects/files/data';
-
-
-
-
-class shape{
-public function getArea(){
-             
-}
-}
-
-class Circle implements shape{
-    private $radius;
-    
-    public function sortByArea($radius){
-    $this->radius = $radius;    
-        }
-        public function getArea(){
-        
-        return 3.14 * $this->radius * $this->radius;    
-
-        }
-}
-        
-        class Rectangle implements shape {
-        private $width;
-        private $height;
-
-        function construct($width, $height){
-            $this->width = $width;
-            $this->height = $height;
-            
-        }
-        function getArea(){
-            return $this->width * $this->height;
-        }
-        
-        function calculateArea(shape_main $shape){
-            return $shape->getArea();
-        }
-}
-
-    
-    
-
-
-
-   
-$rectangle = new Rectangle();
-$circle = new Circle();
-$a = "Original";
-$object = fopen( "data.dsv", "r"); 
-$arrayIndex = new shape($object);
-$results = $arrayIndex;
-
-print_r($results, true);
-
-foreach ($results as $i => $value){
-    unset($results[$i]);
-}
-echo '$results';
+include 'home/tim/NetBeansProjects/Shape/test_app/shape main.php';
+echo $results;
 ?>
 
-<?php
-
-interface shape_main {
-    
-//function findShapeIndex($instance,$shapes){
-    
-    //echo "$instance";
-}
-    //}
-    
-    
-        
-        
-function findShapeIndex($instance,$shapes) {
-    extract($object);
-    echo '$instance,$shapes.<br>';
-
-}
-?>
     </body>  
 </html>
